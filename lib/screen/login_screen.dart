@@ -34,16 +34,18 @@ class LoginScreen extends StatelessWidget {
               etNama: nama,
               etNo: no,
             ),
+            JenisKelamin(),
             FooterLogin(
               onPressedLogin: () {
                 if (formKey.currentState!.validate()) {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => HomeScreen(
-                              nama: nama.text,
-                              no: no.text,
-                            )),
+                      builder: (context) => HomeScreen(
+                        nama: nama.text,
+                        no: no.text,
+                      ),
+                    ),
                   );
                 }
               },
