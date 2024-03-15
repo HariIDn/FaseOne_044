@@ -24,7 +24,10 @@ class _HeadFormState extends State<FormLogin> {
               controller: widget.etNama,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
-                  labelText: 'Nama', hintText: 'Silahkan Masukan Nama'),
+                  labelText: 'Nama',
+                  hintText: 'Silahkan Masukan Nama',
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10))),
               validator: (value) {
                 if (value!.isEmpty) {
                   return 'Masukan Nama';
@@ -40,7 +43,9 @@ class _HeadFormState extends State<FormLogin> {
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
                   labelText: 'Nomor Telepon',
-                  hintText: 'Silahkan Masukan Nomor'),
+                  hintText: 'Silahkan Masukan Nomor',
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10))),
               validator: (value) {
                 bool valid = RegExp(r"^[0-9]+$").hasMatch(value!);
                 if (value!.isEmpty) {
@@ -57,7 +62,10 @@ class _HeadFormState extends State<FormLogin> {
             TextFormField(
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
-                  labelText: 'Alamat', hintText: 'Silahkan Masukan Alamat'),
+                  labelText: 'Alamat',
+                  hintText: 'Silahkan Masukan Alamat',
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10))),
             ),
           ],
         ));
