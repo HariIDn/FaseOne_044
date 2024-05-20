@@ -3,7 +3,6 @@ import 'package:ucp1/screen/detail_screen.dart';
 import 'package:ucp1/screen/home_screen.dart';
 import 'package:ucp1/screen/login_screen.dart';
 import 'package:ucp1/widget/login/form_login.dart';
-import 'package:ucp1/widget/login/head_login.dart';
 
 void main() {
   runApp(const MyApp());
